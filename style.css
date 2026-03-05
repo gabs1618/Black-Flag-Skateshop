@@ -1,0 +1,172 @@
+body {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #181a1b;
+    color: #f4f4f4;
+}
+
+header {
+    background: #111;
+    color: #fff;
+    padding: 32px 0 18px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+.logo-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.logo-minimalista {
+    height: 152px;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+    filter: drop-shadow(0 2px 8px #0008);
+}
+
+.skateshop-text {
+    text-align: center;
+    font-size: 2.2em;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 4px #000a;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 18px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.15em;
+    padding: 8px 18px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+nav a:hover, nav a:focus {
+    background: #ffcc00;
+    color: #181a1b;
+    box-shadow: 0 2px 8px #ffcc0033;
+    outline: none;
+}
+
+main {
+    max-width: 1100px;
+    margin: 40px auto 0 auto;
+    background: #232526;
+    padding: 40px 32px 32px 32px;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+}
+
+section {
+    margin-bottom: 48px;
+}
+
+#produtos ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 32px;
+}
+
+#produtos li {
+    background: #181a1b;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px #0004;
+    padding: 24px 18px 18px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.15s, box-shadow 0.15s;
+    border: 1px solid #232526;
+}
+
+#produtos li:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 32px #ffcc0033, 0 2px 12px #0006;
+    border-color: #ffcc00;
+}
+
+.foto-produto {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    display: block;
+    box-shadow: 0 2px 8px #0006;
+    background: #232526;
+}
+
+#produtos h3 {
+    margin: 0 0 10px 0;
+    color: #ffcc00;
+    font-size: 1.25em;
+    text-align: center;
+    text-shadow: 1px 1px 4px #000a;
+}
+
+#produtos p {
+    margin: 4px 0;
+    color: #e0e0e0;
+    text-align: center;
+}
+
+footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 18px 0;
+    font-size: 1em;
+    border-radius: 0 0 16px 16px;
+    margin-top: 48px;
+    box-shadow: 0 -2px 8px #0008;
+}
+
+@media (max-width: 800px) {
+    main {
+        padding: 16px 4vw;
+    }
+    #produtos ul {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+    .logo-minimalista {
+        height: 90px;
+    }
+    .skateshop-text {
+        font-size: 1.2em;
+    }
+    nav ul {
+        gap: 10px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #232526;
+}
+::-webkit-scrollbar-thumb {
+    background: #111;
+    border-radius: 8px;
+}
